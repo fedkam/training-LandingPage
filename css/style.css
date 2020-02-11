@@ -23,15 +23,39 @@
 }
 body {
   font-family: "Proxima Nova Light", sans-serif;
+  color: #262626;
+}
+
+.button-o {
+  border: 2px solid #507fe1;
+  text-transform: uppercase;
+  padding: 19px 22px 17px;
+  color: #507fe1;
+  font-family: "Proxima Nova Semibold", sans-serif;
 }
 
 .navbar-wrap {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   min-height: 80px;
 }
-.navbar__menu-button {
-  margin-right: 30px;
+.navbar__mobile, .navbar__landline {
+  text-align: right;
+}
+.navbar__phone {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 19px;
+  text-decoration: none;
+  color: #262626;
+  font-family: "Proxima Nova Semibold", sans-serif;
+}
+.navbar__work-time, .navbar__email {
+  display: block;
+  text-decoration: none;
+  font-size: 14px;
+  color: #7b7b79;
 }
 
 .menu-button {
@@ -59,11 +83,26 @@ body {
   font-size: 18px;
   text-transform: uppercase;
   font-family: "Proxima Nova Semibold", sans-serif;
-  margin-bottom: 8px;
+  margin-bottom: 4px;
 }
 .logo__discription {
   display: block;
   font-size: 14px;
-  color: #6b6b6b;
+  color: #7b7b79;
+}
+
+.hero {
+  background: #f1f1f1 url("http://placehold.it/1920x690") no-repeat center center;
+  background-size: cover;
+  padding-top: 120px;
+  padding-bottom: 270px;
+}
+.hero__title {
+  font-size: 30px;
+}
+.hero__suptitle {
+  font-size: 30px;
+  margin-bottom: 67px;
+  font-family: "Proxima Nova Semibold", sans-serif;
 }
 /*# sourceMappingURL=style.css.map */
