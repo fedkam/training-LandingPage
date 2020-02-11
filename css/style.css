@@ -24,3 +24,8 @@
 body {
   font-family: "Proxima Nova Light", sans-serif;
 }
+
+.navbar-wrap {
+  display: flex;
+}
+/*# sourceMappingURL=style.css.map */
