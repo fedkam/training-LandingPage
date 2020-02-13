@@ -34,6 +34,22 @@ body {
   font-family: "Proxima Nova Semibold", sans-serif;
 }
 
+.button {
+  padding: 25px 45px;
+  text-transform: uppercase;
+  border: none;
+  background-color: #507fe1;
+  color: #ffffff;
+  font-family: "Proxima Nova Semibold", sans-serif;
+}
+
+.navbar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+}
 .navbar-wrap {
   display: flex;
   align-items: center;
@@ -92,15 +108,17 @@ body {
 }
 
 .hero {
-  background: #f1f1f1 url("http://placehold.it/1920x690") no-repeat center center;
-  background-size: cover;
-  padding-top: 120px;
+  background: #f1f1f1 url("http://placehold.it/1920x690") no-repeat center top 80px;
+  background-size: contain;
+  padding-top: 180px;
   padding-bottom: 270px;
 }
 .hero__title {
   font-size: 30px;
+  margin-bottom: 40px;
 }
 .hero__suptitle {
+  display: block;
   font-size: 30px;
   margin-bottom: 67px;
   font-family: "Proxima Nova Semibold", sans-serif;
