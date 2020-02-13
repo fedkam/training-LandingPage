@@ -49,6 +49,7 @@ body {
   top: 0;
   width: 100%;
   background-color: #fff;
+  z-index: 99;
 }
 .navbar-wrap {
   display: flex;
@@ -74,6 +75,31 @@ body {
   color: #7b7b79;
 }
 
+.menu {
+  position: fixed;
+  z-index: 0;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  padding: 16px 0;
+  background-color: #507fe1;
+  transition: 0.2s;
+  transform: translateY(-100%);
+}
+.menu__active {
+  transform: translateY(0);
+}
+.menu__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.menu__link {
+  text-decoration: none;
+  font-style: 17px;
+  text-transform: uppercase;
+  color: #fff;
+}
 .menu-button {
   display: flex;
   flex-direction: column;
@@ -98,8 +124,8 @@ body {
   display: block;
   font-size: 18px;
   text-transform: uppercase;
-  font-family: "Proxima Nova Semibold", sans-serif;
   margin-bottom: 4px;
+  font-family: "Proxima Nova Semibold", sans-serif;
 }
 .logo__discription {
   display: block;
