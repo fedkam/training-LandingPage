@@ -363,4 +363,21 @@ body {
     margin-bottom: 50px;
   }
 }
+.catalog-block {
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.catalog-card {
+  max-width: 570px;
+  height: 130px;
+  flex-basis: 50%;
+  position: relative;
+}
+.catalog-card__buttons {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
 /*# sourceMappingURL=style.css.map */
