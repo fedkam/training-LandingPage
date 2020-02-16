@@ -44,6 +44,10 @@ body {
   color: #262626;
 }
 
+img {
+  max-width: 100%;
+}
+
 .section {
   padding: 10px 0;
 }
@@ -54,7 +58,7 @@ body {
   font-family: "Proxima Nova Semibold", sans-serif;
 }
 .section__tittle {
-  padding-bottom: 100px;
+  padding: 100px 0;
 }
 
 .button-o {
@@ -72,7 +76,20 @@ body {
   border: none;
   background-color: #507fe1;
   color: #ffffff;
+  text-decoration: none;
   font-family: "Proxima Nova Semibold", sans-serif;
+}
+.button-fitting {
+  color: #507fe1;
+  background-color: #fff;
+}
+.button-add {
+  color: #fff;
+  background-color: #507fe1;
+}
+.button-like {
+  background-color: #507fe1;
+  height: 30px;
 }
 
 .bg-secondary {
@@ -363,21 +380,68 @@ body {
     margin-bottom: 50px;
   }
 }
+.catalog {
+  background-color: #f5f6f6;
+}
 .catalog-block {
   display: -ms-flex;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
+.catalog__card {
+  margin-bottom: 30px;
+}
 .catalog-card {
   max-width: 570px;
-  height: 130px;
-  flex-basis: 50%;
   position: relative;
+  box-shadow: 7px 5px 21px rgba(0, 0, 0, 0.1);
 }
 .catalog-card__buttons {
   position: absolute;
   bottom: 0;
   right: 0;
+  display: flex;
+}
+.catalog-card__button {
+  padding: 10px;
+  text-transform: uppercase;
+  border: none;
+  font-size: 11px;
+  height: 30px;
+}
+.catalog-card__tag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 10px;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: rgba(80, 127, 225, 0.6);
+}
+.catalog-card__image {
+  display: block;
+}
+.catalog__link {
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 100px;
+}
+.catalog__link-more {
+  display: inline-block;
+  margin-bottom: 25px;
+}
+.catalog__description {
+  display: block;
+}
+
+@media (max-width: 1199px) {
+  .catalog-block {
+    justify-content: center;
+  }
+  .catalog-card {
+    max-width: 470px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

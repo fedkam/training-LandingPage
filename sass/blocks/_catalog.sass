@@ -1,16 +1,60 @@
 .catalog
+  background-color: #f5f6f6
   &-block
     display: -webkit-flex
     display: -ms-flex
     display: flex
     justify-content: space-between
     flex-wrap: wrap
+
+  &__card
+    margin-bottom: 30px
+
   &-card
     max-width: 570px
-    height: 130px
-    flex-basis: 50%
     position: relative
+    box-shadow: 7px 5px 21px rgba(0, 0, 0, .1)
     &__buttons
       position: absolute
       bottom: 0
       right: 0
+      display: flex
+    &__button
+      padding: 10px
+      text-transform: uppercase
+      border: none
+      font-size: 11px
+      height: 30px
+    &__tag
+      position: absolute
+      top: 10px
+      left: 10px
+      padding: 10px
+      font-size: 12px
+      text-transform: uppercase
+      color: #ffffff
+      background-color: rgba($text-color-primery, .6)
+    &__image
+      display: block
+
+  &__link
+    text-align: center
+    margin-top: 60px
+    margin-bottom: 100px
+
+  &__link-more
+    display: inline-block
+    margin-bottom: 25px
+
+  &__description
+    display: block
+
+
+
+//Andaptive
+@media (max-width: 1199px)
+  .catalog
+    &-block
+      justify-content: center
+    &-card
+      max-width: 470px
