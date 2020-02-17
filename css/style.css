@@ -128,12 +128,15 @@ img {
 }
 
 @media (max-width: 576px) {
+  .button {
+    font-size: 10px;
+  }
   .button-o {
-    font-size: 12px;
+    font-size: 10px;
   }
 
   .section {
-    padding: 60px;
+    padding: 60px 0;
   }
   .section-tittle {
     font-size: 20px;
@@ -360,6 +363,14 @@ img {
     margin-bottom: 20px;
   }
 }
+.form__row-checkbox {
+  flex-direction: column;
+  align-items: flex-start;
+}
+.form__checkbox {
+  margin-bottom: 20px;
+}
+
 .features-block {
   display: -ms-flex;
   display: flex;
@@ -537,12 +548,17 @@ img {
   bottom: -80px;
 }
 
-@media (max-width: 961px) {
+@media (max-width: 991px) {
   .price-block {
     justify-content: center;
   }
   .price-block__card {
     margin: 20px;
+  }
+}
+@media (max-width: 400px) {
+  .price-block-card {
+    margin: 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */
