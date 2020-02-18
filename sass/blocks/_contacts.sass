@@ -5,3 +5,31 @@
     display: flex
     justify-content: space-between
     flex-wrap: wrap
+    &__item
+      text-align: center
+
+  &__image
+    margin-bottom: 25px
+
+  &__text
+    font-size: 16px
+
+  &__link
+    text-decoration: none
+    color: #000
+
+  &__address
+    font-style: normal
+
+
+
+//Andaptive
+@media (max-width: 768px)
+  .contacts
+    &-block
+      &__item
+        width: 100%
+        margin-bottom: 20px
+    &__address
+      max-width: 200px
+      margin: auto
