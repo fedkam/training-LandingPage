@@ -284,11 +284,17 @@ img {
   padding: 129px 0;
 }
 .offer-block {
-  background: #fff url("http://placehold.it/410x550") no-repeat center right;
-  background-size: contain;
   padding: 80px;
   margin-top: -200px;
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+}
+.offer-block_calc-bg {
+  background: #fff url("http://placehold.it/410x550") no-repeat center right;
+  background-size: contain;
+}
+.offer-block_price-bg {
+  background: #fff url("http://placehold.it/410x550") no-repeat center right;
+  background-size: contain;
 }
 .offer__tittle {
   font-size: 25px;
@@ -299,13 +305,14 @@ img {
   display: block;
   font-size: 21px;
   margin-bottom: 48px;
+  max-width: 800px;
 }
 
 .form__row {
   display: flex;
   align-items: center;
   max-width: 900px;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
 .form__row:last-child {
   margin-bottom: 0;
@@ -330,23 +337,30 @@ img {
   width: 100%;
   height: 80px;
 }
+.form__policy {
+  display: inline-block;
+  margin-left: 45px;
+  font-size: 17px;
+}
 
 @media (max-width: 1199px) {
   .offer-block {
     background-position: center right -120px;
   }
+}
+@media (max-width: 991px) {
+  .offer-block {
+    background: none;
+    background-color: #fff;
+    padding: 40px;
+  }
+}
+@media (max-width: 768px) {
   .offer__tittle {
     font-size: 18px;
   }
   .offer__subtittle {
     font-size: 16px;
-  }
-}
-@media (max-width: 768px) {
-  .offer-block {
-    background: none;
-    background-color: #fff;
-    padding: 40px;
   }
 
   .form__row {
@@ -361,6 +375,10 @@ img {
   }
   .form__input {
     margin-bottom: 20px;
+  }
+  .form__policy {
+    margin-left: 0;
+    margin-top: 30px;
   }
 }
 .form__row-checkbox {
@@ -605,5 +623,51 @@ img {
   .step {
     width: 100%;
   }
+}
+.reviews {
+  background-color: #f5f6f8;
+}
+.reviews-slider {
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-between;
+}
+.reviews-slider__item {
+  text-align: center;
+}
+.reviews-slider__image {
+  display: block;
+  width: 70px;
+  height: 70px;
+  border: 2px solid #6a99e9;
+  border-radius: 100%;
+  margin: 20px auto;
+}
+.reviews-slider__text {
+  position: relative;
+  font-size: 15px;
+  font-style: italic;
+  max-width: 370px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+.reviews-slider__text:after {
+  content: "";
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 10px;
+  border: 10px solid transparent;
+  border-top: 10px solid #fff;
+}
+
+.factory-block {
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 /*# sourceMappingURL=style.css.map */
