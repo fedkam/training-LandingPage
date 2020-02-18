@@ -3,5 +3,21 @@
     display: -webkit-flex
     display: -ms-flex
     display: flex
-    justify-content: space-between
-    align-items: center
+    flex-direction: row
+    justify-content: center
+    &__image
+      margin-right: 73px
+    &__text
+      flex-basis: 50%
+      font-size: 20px
+
+
+
+//Andaptive
+@media (max-width: 960px)
+.factory
+  &-block
+    flex-direction: column
+    &__image
+      margin: 0 auto 20px auto
+    &__text

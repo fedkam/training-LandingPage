@@ -667,7 +667,21 @@ img {
 .factory-block {
   display: -ms-flex;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+.factory-block__image {
+  margin-right: 73px;
+}
+.factory-block__text {
+  flex-basis: 50%;
+  font-size: 20px;
+}
+
+.factory-block {
+  flex-direction: column;
+}
+.factory-block__image {
+  margin: 0 auto 20px auto;
 }
 /*# sourceMappingURL=style.css.map */
