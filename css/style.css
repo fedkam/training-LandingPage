@@ -678,10 +678,10 @@ img {
   font-size: 20px;
 }
 
-.factory-block {
-  flex-direction: column;
-}
-.factory-block__image {
-  margin: 0 auto 20px auto;
+.contacts-block {
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 /*# sourceMappingURL=style.css.map */
